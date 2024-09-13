@@ -1,0 +1,178 @@
+:root {
+    /* ## Colors */
+
+/* ### Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+/* ## Typography */
+
+--fuente: "Poppins", sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    font-family: var(--fuente);
+    font-size: 15px;
+}
+
+/* Generales */
+
+h1, h3 {
+    color: var(--Very-Dark-Blue);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+span, p {
+    color: var(--Grayish-Blue);
+}
+
+.cuadro {
+    width: 40rem;
+    height: 25rem;
+    background-color: white;
+    padding: 3rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    -webkit-box-shadow: 2px 14px 39px -12px rgba(76,78,97,1);
+    -moz-box-shadow: 2px 14px 39px -12px rgba(76,78,97,1);
+    box-shadow: 2px 14px 39px -12px rgba(76,78,97,1);
+}
+
+.image {
+    display: flex;
+    justify-content: end;
+    margin-top: 3.6rem;
+}
+
+/* Header */
+
+span {
+    font-size: 36px;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 6rem 55rem; 
+}
+
+.titulo p {
+    color: var(--Grayish-Blue);
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+/* Main */
+
+.contenedor-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-1 {
+    border-top: solid .5rem var(--Cyan);
+}
+
+.c-2 {
+    border-top: solid .5rem var(--Red);
+}
+
+.c-3 {
+    border-top: solid .5rem var(--Orange);
+    margin-top: 3rem;
+}
+
+.c-4 {
+    border-top: solid .5rem var(--Blue);
+}
+
+.c-5 {
+    margin: 0 3rem;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        margin: 6rem 4rem;
+    }
+    
+    .contenedor-general {
+        flex-direction: column;
+    }
+
+    .cuadro {
+        width: 80%;
+        height: auto;
+        margin: 0 4rem;
+    }
+
+    .cuadro p {
+        font-size: 13px;
+    }
+
+    .c-5 {
+        width: 80%;
+        margin: 3rem 0 ;
+    }
+
+    .c-2, .c-3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .c-3 {
+        margin-top: 3rem;
+    } 
+
+    span, h1 {
+        font-size: 24px;
+    }
+
+    .attribution {
+        margin: 0 4rem;
+    }
+
+}
+
+/* footer */
+
+.attribution {
+    margin: 3rem 5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
